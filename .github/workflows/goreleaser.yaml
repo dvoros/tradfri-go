@@ -21,6 +21,9 @@ jobs:
         name: Set up Go
         uses: actions/setup-go@v4
       -
+        name: Install Protoc
+        uses: arduino/setup-protoc@v3
+      -
         name: Run GoReleaser
         uses: goreleaser/goreleaser-action@v5
         with:
